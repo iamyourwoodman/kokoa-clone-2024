@@ -1,0 +1,137 @@
+.screen__header__icons {
+  position: relative;
+}
+
+.badge__dot {
+  position: absolute;
+  right: -6px;
+  top: -6px;
+}
+
+.recommended-friends {
+  margin: 25px 0px !important;
+  padding: 25px 0px;
+  border-top: var(--devider);
+  border-bottom: var(--devider);
+  color: var(--gray);
+}
+
+.recommended-friends__title {
+  font-size: 15px;
+}
+
+.recommended-friends__text {
+  margin: 110px 0px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.open-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--gray);
+  margin-bottom: 25px;
+}
+
+.open-chat__header span {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 15px;
+}
+
+.open-post__title {
+  font-weight: 500;
+  color: black;
+}
+
+.open-post__hashtags {
+  text-transform: uppercase;
+  color: var(--gray);
+  font-size: 15px;
+  margin: 10px 0px;
+}
+
+.open-post__members {
+  display: flex;
+  align-items: center;
+}
+
+.open-post__members img {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+.open-post__member-count {
+  color: var(--gray);
+  font-size: 14px;
+}
+
+.open-post__members .devider {
+  width: 2px;
+  height: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 0 5px;
+}
+
+.open-post__member-status {
+  color: #ff6dc7;
+}
+
+.open-post__column {
+  color: white;
+}
+
+.open-post__photo {
+  position: relative;
+}
+
+.open-post__photo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.open-post__likes {
+  position: absolute;
+  padding: 2px;
+  bottom: 7px;
+  right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 62px;
+  height: 23px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+}
+
+.open-post__likes i {
+  margin-right: 3px;
+}
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.open-post__likes:hover i {
+  will-change: transform;
+  animation: heartBeat 1s linear infinite;
+}
